@@ -42,7 +42,7 @@
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">
-                        <i class="nav-icon fa-solid fa-table fa-lg"></i>
+                        <i class="nav-icon fa-solid fa-table"></i>
                         <p>
                             Adminstrador
                             <i class="right fas fa-angle-left"></i>
