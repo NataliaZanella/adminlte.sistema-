@@ -14,13 +14,21 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//Inicio e Login
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth.login');
 });
+
+//Dashboard
 
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::get('/home', [HomeController::class, 'index']);
+
+//Usuários
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -28,4 +36,17 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';
+
+
+
+//Adicionar dotações/contratos
+
+
+
+//alterar
+//Pesquisa de Dotações/Contratos
+
+Route::get('/dotaçãos/search', 'DotaçãoController@search');
+
+Route::get('/dotaçãos', [DotaçãoController::class, 'index'])->name('dotaçãos.index');
