@@ -41,12 +41,14 @@ require __DIR__ . '/auth.php';
 
 
 //Adicionar dotações/contratos
+Route::get('/adicionar', [HomeController::class, 'adicionar']);
+Route::post('/adicionar', [HomeController::class, 'store_dotacao']);
 
 
 
 //alterar
 //Pesquisa de Dotações/Contratos
 
-Route::get('/dotaçãos/search', 'DotaçãoController@search');
+Route::get('/dotacaos/search', 'DotacaoController@search');
 
-Route::get('/dotaçãos', [DotaçãoController::class, 'index'])->name('dotaçãos.index');
+Route::get('/dotacaos', [DotacaoController::class, 'index'])->name('dotacaos.index');

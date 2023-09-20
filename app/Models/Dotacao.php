@@ -9,5 +9,13 @@ class Dotacao extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['Valor_total', 'Nome', 'Tipo', 'Subcategoria', 'Ano', 'Data_incio', 'Empresa_prestadora'];
+    protected $fillable = [
+        'Valor_total',
+        'Nome',
+        'Tipo',
+        'Subcategoria',
+        'Ano',
+        'Data_incio',
+        'Empresa_prestadora'
+    ];
 }

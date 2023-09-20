@@ -1,4 +1,4 @@
-<aside class="main-sidebar sidebar-dark-primary elevation-4">
+<aside class="main-sidebar sidebar-dark-primary elevation-4" style="min-height: 107%">
 
     <a href="../../index3.html" class="brand-link">
         <img src="../../dist/img/smcc.png" alt="SmcLogo" class="brand-image img-circle elevation-3" style="opacity: .8">
@@ -33,7 +33,7 @@
                 data-accordion="false">
 
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="{{ route('dashboard') }}" class="nav-link">
                         <i class="nav-icon fa-solid fa-table fa-lg"></i>
                         <p>
                             Dashboard
@@ -68,7 +68,7 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="../../index.html" class="nav-link">
+                            <a href="{{ route('dashboard') }}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Dotação</p>
                             </a>
