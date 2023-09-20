@@ -6,7 +6,8 @@
         </div>
         <!-- /.card-header -->
         <!-- form start -->
-        <form action="/adicionar" method="POST">
+        <form action=" {{ route('adicionar.store') }} " method="POST">
+            @csrf
             <div class="card-body">
                 <div class="form-group">
                     <label for="exampleInputEmail1">Email address</label>

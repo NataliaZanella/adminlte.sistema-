@@ -72,7 +72,7 @@
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Dotação</p>
                             </a>
-                        </li>
+                        </li>''
                         <li class="nav-item">
                             <a href="../../index3.html" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
